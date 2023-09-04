@@ -1,0 +1,22 @@
+body {
+  font-family: "Montserrat";
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    flex-direction: row;
+  }
+}
+
+ol > li::marker {
+  font-weight: bold;
+}
