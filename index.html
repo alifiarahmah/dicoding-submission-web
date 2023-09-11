@@ -10,87 +10,26 @@
     <link rel="icon" type="image/png" href="./assets/favicon.ico">
   </head>
 
-  <!--
-    TODO:
-    - Buat back to top
-    - Buat navbar jadi dropdown di mobile, tambah a menuju aside khusus mobile
-    - Buat aside jadi sticky & toggleable di desktop
-    - Buat artikel di-render dari JSON
-    - Cari desain yang lebih bagus
-  -->
-
   <body>
     <header>
       <div class="web-title">
         <h1>🐱 Cat Supremacy 🐱</h1>
-        <div class="subtitle"><em>Purr-fectly supreme and paw-sitively best!</em></div>
+        <div class="subtitle"><em>Paw-sitively The Purr-fect Pet</em></div>
       </div>
-      <nav>
-        <a href="#tentang">Tentang</a>
-        <a href="#kucing-lebih-baik">Kucing Lebih Baik!</a>
+      <div id="nav-toggle">
+        <button class="hide-in-mobile" aria-label="toggle navigation">☰</button>
+      </div>
+      <nav id="navigation">
       </nav>
     </header>
     <main>
       <div id="content">
-        <article id="tentang">
-          <h2>Mengenal Kucing</h2>
-          <img src="https://images.unsplash.com/photo-1604398907654-ec2bf7108b4a?auto=format&fit=crop&h=500" width="100%">
-          <p>Kucing disebut juga kucing domestik atau kucing rumah (nama ilmiah: <i>Felis silvestris catus</i> atau <i>Felis catus</i>) adalah sejenis mamalia karnivora dari keluarga <i>Felidae</i>. Saat ini, kucing adalah salah satu hewan peliharaan terpopuler di dunia. Kucing juga merupakan jenis hewan peliharaan yang banyak diminati karena tingkah lakunya yang lucu.</p>
-          <p>Kucing peliharaan atau kucing rumah adalah salah satu predator terhebat di dunia. Kucing ini dapat membunuh atau memakan beberapa ribu spesies, kucing besar biasanya kurang dari 100. Akan tetapi, karena ukurannya yang kecil, kucing tidak begitu berbahaya bagi manusia. Kucing dianggap sebagai "karnivora yang sempurna" dengan gigi dan saluran pencernaan yang khusus. Gigi premolar dan molar pertama membentuk sepasang taring di setiap sisi mulut yang bekerja efektif seperti gunting untuk merobek daging.</p>
-          <p>Meskipun memiliki reputasi sebagai hewan penyendiri, kucing biasanya dapat membentuk koloni liar, tetapi tidak menyerang dalam kelompok seperti singa. Setiap kucing memiliki daerahnya sendiri (jantan yang aktif secara seksual memiliki daerah terbesar, sedangkan jantan steril memiliki daerah paling kecil) dan selalu terdapat daerah "netral" di mana para kucing dapat saling mengawasi atau bertemu tanpa adanya konflik teritorial atau agresi.</p>
-          <p>Kucing termasuk hewan yang bersih. Mereka sering merawat diri dengan menjilati rambut mereka. Saliva atau air liur mereka adalah agen pembersih yang kuat, tetapi dapat memicu alergi pada manusia. Kadang kala kucing memuntahkan hairball atau gulungan rambut yang terkumpul di dalam perut mereka. Kucing menyimpan energi dengan cara tidur lebih sering ketimbang hewan lain. Lama tidur kucing bervariasi antara 12—16 jam per hari, dengan angka rata-rata 13—14 jam. Akan tetap, tidak jarang dijumpai kucing yang tidur selama 20 jam dalam satu hari.</p>
-          <p>Sumber: <a href="https://id.wikipedia.org/wiki/Kucing">Kucing - Wikipedia bahasa Indonesia</a></p>
-        </article>
-        <article id="kucing-lebih-baik">
-          <h2>9 Alasan Memelihara Kucing Lebih Baik daripada Anjing</h2>
-          <img src="https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?auto=format&fit=crop&h=500" width="100%">
-          <p>Dikenal sebagai sahabat terbaik manusia, tidak heran jika anjing terasa lebih digemari dan sering dijadikan sebagai hewan peliharaan. Tapi, bagi orang-orang yang pernah memelihara kucing, mungkin mereka memiliki pendapat yang berbeda. Kucing ternyata memiliki sikap yang tak kalah lembut, manis, dan juga pintar. Selain itu, dalam beberapa hal, kucing juga lebih bisa diandalkan dan tidak memerlukan banyak biaya ketika dijadikan sebagai hewan peliharaan. berikut adalah beberapa alasan mengapa memelihara kucing lebih baik daripada anjing.</p>
-          <ol>
-            <li>
-              <h3>Kucing lebih mandiri</h3>
-            <p>Kucing memang mendapatkan julukan buruk selama bertahun-tahun karena bersikap dingin dan suka menyendiri. Akibatnya, banyak orang yang percaya bahwa yang dinginkan atau dibutuhkan hewan ini dari manusia hanyalah makanan. Namun pada kenyataannya, tidak ada yang lebih jauh dari kebenaran. Menurut sebuah studi tahun 2017 yang diterbitkan dalam jurnal Behavioral Processes, kucing lebih menyukai interaksi dengan manusia daripada semua rangsangan lainnya, termasuk makanan dan mainan. Kucing menghargai dan mempraktikkan kemandirian, tetapi hewan ini juga sangat menghargai waktu bersama orang-orang.</p>
-            </li>
-            <li>
-              <h3>Tidak perlu berjalan-jalan setiap hari</h3>
-              <p>Anjing peliharaan akan mengikuti kita berkeliling dengan mata yang sedih dan memohon sampai kita mengambil tali penuntunnya dan memaksakan diri untuk keluar dan berjalan-jalan dengannya. Di sisi lain, kucing lebih senang menghabiskan sebagian besar waktunya untuk tidur siang. Ketika kucing tidak tidur, sesi bermain di dalam ruangan dengan mainan terbaik, menghabiskan waktu bersama pemiliknya, dan makan makanan yang lezat adalah semua yang dibutuhkan kucing untuk menjalani kehidupan terbaiknya.</p>
-            </li>
-            <li>
-              <h3>Tidak memakan banyak tempat</h3>
-              <p>Dengan berat rata-rata kucing sekitar 10 kg, hewan ini sangat mungil, sehingga kita tidak akan tahu bahwa kucing ada di dalam rumah. Bahkan, terkadang kucing sangat jenius dalam menyelipkan dirinya sendiri ke dalam celah kecil agar kita tidak mudah menemukannya saat permainan petak umpet. Tidak demikian halnya dengan anjing, di mana American Kennel Club menempatkan hewan ini berukuran sedang dengan berat sekitar 50 kg.</p>
-            </li>
-            <li>
-              <h3>Kucing senang berada di dalam ruangan </h3>
-              <p>Hampir tidak mungkin bagi seekor anjing untuk memiliki gaya hidup di dalam ruangan secara eksklusif dan bahagia. Sebab, anjing perlu berjalan-jalan secara teratur, banyak bermain di luar ruangan, dan kesempatan untuk mengendus dan menjelajahi luar ruangan. Di sisi lain, kucing tidak hanya jauh lebih aman dipelihara di dalam ruangan, tetapi hewan ini umumnya sangat senang duduk di tempat yang cerah di dekat jendela dan menyaksikan semua aktivitas yang terjadi di luar. </p>
-            </li>
-            <li>
-              <h3>Tidak mengeluarkan banyak suara </h3>
-              <p>Jujur saja, sebagian besar anjing tidak bisa diam. Hewan ini suka menggonggong saat bel pintu berbunyi, saat mainan favorit tersangkut di bawah sofa, saat ingin makan, saat sangat senang melihat pemiliknya, dan masih banyak lagi. Semua suara itu bisa sangat mengganggu dan meskipun kucing akan mengeong atau mendengkur, namun suara yang dikeluarkan oleh kucing cenderung lucu dan tidak berlebihan.</p>
-            </li>
-            <li>
-              <h3>Kucing membersihkan dirinya sendiri</h3>
-              <p>Jika kita memelihara kucing, kita mungkin jarang melihat hewan ini datang dengan keadaan yang sangat kotor. Tetapi, hal yang sama tidak dapat dikatakan untuk anjing yang sangat suka berguling-guling di luar rumah, mulai dari kotoran hingga sampah. Meskipun kucing tidak menolak jika kita membersihkannya, pada dasarnya hewan ini adalah mesin pembersih diri yang sangat bangga dengan kebersihan pribadinya. </p>
-            </li>
-            <li>
-              <h3>Memahami konsep ruang pribadi</h3>
-              <p>Bagi kita yang pernah atau sedang memelihara anjing, kita pasti tahu betapa manjanya hewan ini. Bahkan, setelah seharian sibuk dan merasa lelah bekerja, kita mungkin harus tetap mengajak hewan peliharaan ini berjalan-jalan agar tidak rewel dan merengek. Untungnya, tidak seperti anjing, kucing tidak membutuhkan perhatian, energi atau kasih sayang yang terlalu sering. Kucing memahami pentingnya ruang dan kemandirian dalam suatu hubungan dan dengan senang hati meringkuk di samping kita atau pergi dan melakukan kegiatannya sendiri.</p>
-            </li>
-            <li>
-              <h3>Memiliki kucing membuat manusia lebih cerdas</h3>
-              <p>Penelitian menunjukkan, pemilik kucing cenderung lebih cerdas daripada pemilik anjing, terlepas dari seberapa cerdas hewan peliharaan mereka yang sebenarnya. Dalam sebuah penelitian yang dilakukan oleh Carroll University di Wisconsin, para peneliti mencari ciri-ciri kepribadian pada 600 siswa yang sesuai dengan pilihan kepemilikan hewan peliharaan. Mereka menemukan, pecinta anjing cenderung lebih lincah, ramah, energik, dan taat aturan, namun pemilik kucing lebih unggul dalam hal kepekaan, keterbukaan pikiran, ketidaksesuaian, dan kecerdasan.</p>
-            </li>
-            <li>
-              <h3>Tidak terlalu bau</h3>
-              <p>Entah itu terguling-guling di sesuatu yang menjijikkan atau hanya basah kuyup saat berjalan-jalan, tidak dapat disangkal bahwa anjing sering kali membawa bau yang tidak sedap bagi hidung manusia. Namun, kucing lebih suka berdiam diri di rumah daripada harus keluar rumah dan masuk lagi dalam keadaan kotor atau bau. Kurangnya aroma tubuh yang berbeda atau bau itulah yang membuat kita semakin menyayangi hewan ini.</p>
-            </li>
-          </ol>
-          <p>Dilansir dari: <a href="https://lifestyle.kompas.com/read/2023/02/24/050000720/9-alasan-memelihara-kucing-lebih-baik-daripada-anjing?page=all" target="_blank">Kompas.com</a></p>
-        </article>
-          <button id="back-to-top" alt="back to top" onclick="backToTop()">^</button>
       </div>
-      <aside>
+      <button id="back-to-top" alt="back to top">^</button>
+      <aside id="tentang-penulis">
         <h2>Tentang Penulis</h2>
         <img src="assets/profile.jpg" alt="profile picture">
-        <p>Penulis adalah seekor kucing jantan berusia 5 tahun yang lahir dan dibesarkan di kota Bandung, Indonesia. Ia adalah kucing yang cerdas dan suka belajar, dan ia memiliki ketertarikan khusus pada dunia internet.</p>
+        <p>Penulis adalah seekor kucing jantan berusia 5 tahun, yang saat ini menjabat sebagai Ketua Umum Persatuan Kucing Indonesia. </p>
         <p>Blog "Cat Supremacy" dibuat untuk menyebarkan opini Penulis yang percaya bahwa kucing adalah peliharaan terbaik bagi orang yang tepat.</p>
       </aside>
     </main>
@@ -98,6 +37,8 @@
       @2023 Cat Supremacy
     </footer>
 
+    <!-- js imports -->
+    <script src="assets/posts.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
